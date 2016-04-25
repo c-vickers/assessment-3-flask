@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}Application Form{% endblock %}
+
+{% block content %}
+	<h2>Interested in applying for an Internship at T-Rex Direct?</h2>
+	<h3>We knew you would be!</h3>
+	<p>To begin the process please fill out the form below. </p>
+	<form action = /application>
+		First Name: <input type="text" name="firstname">
+		Last Name: <input type="text" name ="lastname"><br>
+		Please Select your Requested Salary:
+		<select name="salary">
+			<option value='90000'>$90,000</option>
+			<option value='70000'>$70,000</option>
+			<option value='50000'>$50,000</option>
+			<option value='0'>I will work for free!</option><br>
+			<input type="submit">
+		</select>
+	</form>
+	<br>
+	<p>Note: All candidates will be evaluated based on skills and assigned a commesurate salary at the discretion of management. The dropbox above was implemented just so our team could practice creating dropdowns in HTML.</p>
+
+{% endblock %}

@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block title %}Application Response{% endblock %}
+
+{% block content %}
+<h3>Dino Wrangling Intern Application Received</h3>
+<p> Thank you, {{ firstname }} {{ lastname }}, for applying to be a dino wrangling intern at T-Rex Direct! We have made record of your minimum salary requirement of {{ "${:,.2f}".format(salary) }}. As mentioned previously, we probably won't take this into consideration. </p>
+    <!-- fill this in -->
+
+{% endblock %}
